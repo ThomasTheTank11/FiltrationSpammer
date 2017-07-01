@@ -5,7 +5,7 @@
 Filtration phone spammer offers you the chance to spam phone numbers with your desired message. Customize your message, add multiple numbers and enjoy
 
 
-<img src="http://i.imgur.com/hSwMdU3.png" height="200">
+<img src="http://i.imgur.com/hSwMdU3.png" width="200">
 <img src="http://i.imgur.com/JSy33GF.png" height="200">
 
 
