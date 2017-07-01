@@ -58,5 +58,17 @@ namespace FiltrationSpammer.Properties {
                 this["spammessage"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string phonenumbers {
+            get {
+                return ((string)(this["phonenumbers"]));
+            }
+            set {
+                this["phonenumbers"] = value;
+            }
+        }
     }
 }
