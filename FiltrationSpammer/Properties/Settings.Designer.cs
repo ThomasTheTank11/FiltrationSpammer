@@ -46,5 +46,17 @@ namespace FiltrationSpammer.Properties {
                 this["authtoken"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string spammessage {
+            get {
+                return ((string)(this["spammessage"]));
+            }
+            set {
+                this["spammessage"] = value;
+            }
+        }
     }
 }

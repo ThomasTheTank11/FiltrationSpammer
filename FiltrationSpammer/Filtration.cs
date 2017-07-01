@@ -33,6 +33,9 @@ namespace FiltrationSpammer
         {
             if (!spambw.IsBusy)
             {
+                status.ForeColor = System.Drawing.Color.Green;
+                status.Text = "Spamming Started";
+
                 spambw.RunWorkerAsync();
             }
             else

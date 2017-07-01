@@ -40,6 +40,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.authtoken = new System.Windows.Forms.TextBox();
             this.savesettings = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.spammessage = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +67,7 @@
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -74,7 +76,7 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.status});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 175);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 302);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(348, 22);
             this.statusStrip1.TabIndex = 1;
@@ -127,7 +129,7 @@
             // 
             // savesettings
             // 
-            this.savesettings.Location = new System.Drawing.Point(252, 137);
+            this.savesettings.Location = new System.Drawing.Point(252, 264);
             this.savesettings.Name = "savesettings";
             this.savesettings.Size = new System.Drawing.Size(84, 23);
             this.savesettings.TabIndex = 6;
@@ -135,11 +137,30 @@
             this.savesettings.UseVisualStyleBackColor = true;
             this.savesettings.Click += new System.EventHandler(this.savesettings_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 144);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Spam Message";
+            // 
+            // spammessage
+            // 
+            this.spammessage.Location = new System.Drawing.Point(12, 160);
+            this.spammessage.Multiline = true;
+            this.spammessage.Name = "spammessage";
+            this.spammessage.Size = new System.Drawing.Size(324, 98);
+            this.spammessage.TabIndex = 7;
+            // 
             // settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 197);
+            this.ClientSize = new System.Drawing.Size(348, 324);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.spammessage);
             this.Controls.Add(this.savesettings);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.authtoken);
@@ -151,6 +172,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "settings";
             this.Text = "Filtration Spammer - Spam Phones";
+            this.Load += new System.EventHandler(this.settings_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
@@ -173,5 +195,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox authtoken;
         private System.Windows.Forms.Button savesettings;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox spammessage;
     }
 }

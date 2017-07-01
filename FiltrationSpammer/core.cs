@@ -20,5 +20,11 @@ namespace FiltrationSpammer
             get { return Settings.Default["authtoken"].ToString(); }
             set { Settings.Default["authtoken"] = value; }
         }
+
+        public static string spamMessage
+        {
+            get { return Settings.Default["spammessage"].ToString(); }
+            set { Settings.Default["spammessage"] = value; }
+        }
     }
 }
