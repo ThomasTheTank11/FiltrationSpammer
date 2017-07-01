@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace FiltrationSpammer
 {
-    public partial class Form1 : Form
+    public partial class Filtration : Form
     {
-        public Form1()
+        public Filtration()
         {
             InitializeComponent();
         }
+
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -53,6 +54,11 @@ namespace FiltrationSpammer
                 status.Text = text;
             };
             spammer.Main(phonenumber.Text);
+        }
+
+        private void Filtration_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

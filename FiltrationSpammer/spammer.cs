@@ -16,7 +16,6 @@ namespace FiltrationSpammer
         public event EventHandler<string> StatusTextChanged;
         private List<string> numbers = new List<string>(new string[] { "+100000000", "+100000000" });
         private List<string> numbersInUse = new List<string>();
-
         public string numberToCall;
 
         public void Main(string spamnumber)
