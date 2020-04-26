@@ -12,11 +12,11 @@ Filtration phone spammer offers you the chance to spam phone numbers with your d
 - You will need a Twilio account. You can register and get one here: https://www.twilio.com/
 - Open the spammer.cs file and look for the line that is: 
     
-      private List<string> numbers = new List<string>(new string[] { "+441344207846" });
+      private List<string> numbers = new List<string>(new string[] { "+4192667381" });
 	
 - Remove the the number and add your own numbers, if you have more than one, seperate them like
 
-      private List<string> numbers = new List<string>(new string[] { "+441344207846", "+00000", "+3455432" });
+      private List<string> numbers = new List<string>(new string[] { "+4192667381" , "+00000", "+3455432" });
 	
 	
 - Open the program and click Tools > Settings. Add your AuthToken and Account ID, and Spam Message
